@@ -1,20 +1,23 @@
 public class StarTriangle {
-    String[] ladder;
+
+    public int n;
     StarTriangle(int n) {
-        String arr = "";
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                arr += "[*]";
-            }
-            this.ladder[i] = arr;
-        }
+
+        this.n = n;
+
     }
-        public void toString()
+        public String toString()
         {
-            for(int i =0;i<ladder.length;i++)
-            {
-                System.out.println(ladder[i]);
+            String arr = "";
+            int q = 0;
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j <=i; j++) {
+                    arr += "[*]";
+                }
+                arr += "\n";
+                ///this.ladder[i] = arr;
             }
+            return arr;
         }
     }
-}
+
