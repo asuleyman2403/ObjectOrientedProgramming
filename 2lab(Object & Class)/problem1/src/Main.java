@@ -1,21 +1,15 @@
 import java.util.Scanner;
+import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter ID");
-        int id = sc.nextInt();
-
-        System.out.println("Enter Name");
-        Scanner scn = new Scanner(System.in);
-      //  String s = new String();
-        String name = scn.nextLine();
-
-        System.out.println("Enter YEAR OF STUDY");
-
-        int year = sc.nextInt();
-        Student std = new Student(name,id,year);
-        std.show();
+        Student std = new Student();
+        std.setName("Derbes");
+        std.setId(17);
+        std.setYear(2);
+        System.out.println(std.getName());
+       // std.getID();
+       // std.getyear();
     }
 }
